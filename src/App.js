@@ -12,20 +12,18 @@ const App = () => {
     <Router>
       <Header Link={Link} />
       <Routes>
-        <Route path="/">
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <WhyUs />
-                <OurDevelopments />
-              </>
-            }
-          />
-          <Route path="/WhyUs" element={<WhyUs />} />
-          <Route path="/OurDevelopments" element={<OurDevelopments />} />
-        </Route>
+        <Route
+          path="/mv-constructora"
+          element={
+            <>
+              <Hero />
+              <WhyUs />
+              <OurDevelopments />
+            </>
+          }
+        />
+        <Route path="/WhyUs" element={<WhyUs />} />
+        <Route path="/OurDevelopments" element={<OurDevelopments />} />
       </Routes>
       <Footer />
     </Router>
