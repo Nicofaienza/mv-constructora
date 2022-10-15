@@ -13,7 +13,7 @@ const Header = ({ Link }) => {
           <nav id="nav">
             <ul className="list">
               <li>
-                <Link className="listElement" to="/">
+                <Link className="listElement" to="/mv-constructora">
                   Inicio
                 </Link>
               </li>
