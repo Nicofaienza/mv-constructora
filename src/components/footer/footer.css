@@ -1,53 +1,216 @@
 footer {
   display: flex;
   width: 100%;
-  background-color: #0d263b;
+  background-color: #ecedf0;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 60px 0;
-}
-.containerFooter {
-  margin: auto;
-  display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  padding: 48px 0;
 }
 
-.imgFooter-container {
+#container-footer {
   display: flex;
+  width: 90%;
+  max-width: 1300px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #555;
+}
+
+#footer-list {
+  display: flex;
+  height: 100%;
+  list-style: none;
   align-items: center;
   gap: 8px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 80px;
+  margin-right: 80px;
+  border-right: 1px solid #555;
 }
 
-.imgFooter {
-  height: 60px;
+.footer-list-li {
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding-bottom: 4px;
 }
-
-.copyFooter {
+.footer-list-link {
+  padding: 0 2px 0 0;
   font-size: 0.8rem;
-  color: white;
-}
-
-.contactFooter {
-  font-size: 1rem;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-list-link:hover {
+  color: #555;
+}
+
+#footer__divisor {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#footer-office {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
-.contactFooter > svg {
-  position: relative;
-  top: 3px;
+#footer-office-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  backdrop-filter: blur(10px);
 }
 
-.nameLogoFooter {
-  color: white;
-  font-size: 1.6rem;
-  font-weight: bold;
-  position: relative;
-  top: -3px;
+#footer-office-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+  align-items: center;
+}
+#footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+#footer-contact-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+}
+#footer-contact-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+}
+#footer-social {
+  display: flex;
+  flex-direction: column;
+}
+#footer-social-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+}
+#footer-social-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+}
+
+#footer-social-text:hover {
+  color: #555;
+}
+
+#container-footer-copy {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 32px;
+}
+#container-footer-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+@media screen and (max-width: 1200px) {
+  #container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer-list {
+    flex-direction: row;
+    margin: 0 0 16px;
+    padding: 0 0 16px;
+
+    border-right: 0;
+    border-bottom: 1px solid #555;
+  }
+  #footer-contact {
+    width: 150px;
+  }
+  #footer-office-title {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  #footer-contact-title {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  #footer-social {
+    width: 100px;
+  }
+
+  #footer-social-title {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  #footer-office {
+    width: 100px;
+  }
+
+  #footer-office-text {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  #footer-contact-text {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  #footer-social-text {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  #container-footer-text {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  #container-footer-copy {
+    align-items: center;
+  }
 }

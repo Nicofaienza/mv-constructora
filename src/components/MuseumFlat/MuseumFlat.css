@@ -1,0 +1,114 @@
+#museum-flat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SECTION HERO */
+
+#museum-flat__hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding-top: 75px;
+}
+
+#museum-flat__hero-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#museum-flat__hero-bg-color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(35, 41, 44, 0.4);
+  backdrop-filter: blur(10px) brightness(45%) contrast(120%);
+}
+
+#museum-flat__hero-bg video {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* SECTION INFO */
+
+#museum-flat__info-video-container {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+
+  max-height: 500px;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* SECTION UBICATION */
+
+#museum-flat__ubication-img {
+  width: 40%;
+}
+
+/* SECTION BLUEPRINT */
+
+.proyect__blueprint {
+  width: 100%;
+  padding: 80px 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.proyect__blueprint-title {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+}
+
+.proyect__blueprint-title span {
+  color: var(--secondaryBlue);
+}
+
+.proyect__blueprint-image-container {
+  aspect-ratio: 4/3;
+  min-width: 260px;
+  max-width: 600px;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.proyect__blueprint-image {
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  #museum-flat__ubication-img {
+    width: 60%;
+  }
+
+  .proyect__blueprint-title {
+    font-size: 2.3rem;
+  }
+
+  #museum-flat__hero-bg-color {
+    backdrop-filter: blur(3px) brightness(45%) contrast(120%);
+  }
+}

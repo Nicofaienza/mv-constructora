@@ -1,0 +1,500 @@
+/* Seccion hero */
+
+.proyect__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyect__hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#bg_avellaneda {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/avellaneda4.jpeg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg_avellaneda-color {
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 41, 44, 0.4);
+  backdrop-filter: blur(2px) brightness(45%) contrast(120%);
+}
+
+.proyect__hero-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.proyect__hero-second-title {
+  font-weight: bold;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.proyect__hero-title {
+  font-size: 4rem;
+  width: 50%;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  line-height: 93%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.proyect__hero-title span {
+  color: var(--secondaryBlue);
+}
+
+.proyect__hero-description {
+  width: 60%;
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #ddd;
+  font-family: "Inter", sans-serif;
+}
+
+/* Seccion intro */
+
+.proyect__description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111;
+  padding: 88px 0;
+  gap: 88px;
+}
+
+.proyect__description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 90px 0;
+}
+
+.proyect__description-second-title {
+  font-weight: bold;
+  color: var(--secondaryBlue);
+  font-weight: lighter;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.proyect__description-title {
+  font-size: 3.7rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  letter-spacing: 2.5px;
+}
+
+.proyect__description-span {
+  border: 1px solid var(--blue);
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+  color: var(--blue);
+  margin-bottom: 40px;
+}
+
+.proyect__description-description {
+  width: 85%;
+  font-size: 1.1rem;
+  font-weight: medium;
+  color: #aaa;
+  font-family: "Inter", sans-serif;
+  line-height: 2rem;
+  text-align: center;
+}
+
+/* SECTION INFO */
+
+.proyect__info {
+  width: 100%;
+  padding-bottom: 80px;
+  background: #111;
+  position: relative;
+}
+
+.proyect__info-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+
+  position: relative;
+}
+
+.proyect__info-video-container {
+  position: relative;
+  aspect-ratio: 9/16;
+  width: 90%;
+  max-width: 420px;
+  overflow: hidden;
+  margin: 0 60px;
+  object-fit: contain;
+}
+
+.proyect__info-video {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.proyect__info-list {
+  list-style: none;
+  display: flex;
+  height: 750px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  min-width: 150px;
+}
+
+.proyect__info-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid var(--secondaryBlue);
+  height: 140px;
+  width: 140px;
+}
+
+.proyect__info-li svg {
+  height: 35px;
+  width: 35px;
+  color: var(--secondaryBlue);
+}
+
+/* SECTION UBICACIÓN*/
+
+.proyect__ubication {
+  width: 100%;
+  padding: 80px 0;
+  background: #23292c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyect__ubication-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.proyect__ubication-title {
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 80px;
+}
+
+.proyect__ubication-divisor {
+  display: flex;
+  gap: 48px;
+  height: fit-content;
+  justify-content: center;
+}
+
+#avellaneda__ubication-img {
+  width: 40%;
+}
+
+.proyect__ubication-info-container {
+  height: cover;
+  width: 40%;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proyect__ubication-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.proyect__ubication-list {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.proyect__ubication-list li {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  border-left: 1px solid var(--secondaryBlue);
+  padding-left: 16px;
+}
+
+/*SECTION AVANCES*/
+
+#avellaneda__avances-container {
+  width: 100%;
+  background: #ecedf0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+#avellaneda__avances-title {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  color: #111;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+#avellaneda__avances-text {
+  font-size: 1.3rem;
+  width: 50%;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/*SECTION NUESTROS DESARROLLOS*/
+
+.proyect__our-developments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #23292c;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.proyect__our-developments-title {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.proyect__ourdevelopments-text {
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  line-height: 2rem;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+  .proyect__hero {
+    height: fit-content;
+    padding: 123px 0 48px;
+  }
+
+  .proyect__hero-container {
+    align-items: center;
+  }
+  .proyect__hero-title {
+    text-align: center;
+  }
+
+  .proyect__hero-description {
+    text-align: center;
+  }
+
+  .proyect__description {
+    text-align: center;
+  }
+
+  .proyect__description-span {
+    font-size: 0.8rem;
+  }
+
+  .proyect__description-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .proyect__description-second-title {
+    font-size: 1.5rem;
+  }
+
+  .proyect__description-description {
+    font-size: 1rem;
+  }
+
+  .proyect__ubication-title {
+    font-size: 2.3rem;
+  }
+
+  .proyect__ubication-divisor img {
+    width: 30%;
+  }
+
+  .proyect__ubication-divisor {
+    gap: 32px;
+  }
+
+  .proyect__ubication-list li {
+    font-size: 0.9rem;
+  }
+
+  .proyect__ubication-text {
+    font-size: 1rem;
+  }
+
+  #avellaneda__avances-title {
+    font-size: 2.3rem;
+    margin-bottom: 24px;
+  }
+
+  #avellaneda__avances-text {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .proyect__our-developments-title {
+    font-size: 2.3rem;
+    margin-bottom: 24px;
+  }
+
+  .proyect__ourdevelopments-text {
+    font-size: 1rem;
+
+    line-height: 150%;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .proyect__hero-container {
+    align-items: center;
+  }
+
+  .proyect__hero-second-title {
+    font-size: 0.8rem;
+  }
+
+  .proyect__hero-title {
+    text-align: center;
+    font-size: 2.4rem;
+    min-width: min-content;
+  }
+
+  .proyect__hero-description {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .proyect__description {
+    text-align: center;
+  }
+
+  .proyect__description-span {
+    font-size: 0.7rem;
+  }
+
+  .proyect__description-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .proyect__description-second-title {
+    font-size: 1.2rem;
+  }
+
+  .proyect__description-description {
+    font-size: 1rem;
+  }
+
+  .proyect__info-list {
+    display: none;
+  }
+
+  .proyect__ubication-info-container {
+    width: 80%;
+    gap: 24px;
+  }
+
+  .proyect__ubication-divisor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyect__ubication-text {
+  }
+
+  #avellaneda__ubication-img {
+    width: 80%;
+  }
+
+  #avellaneda__avances-title {
+    font-size: 2.3rem;
+    margin-bottom: 24px;
+  }
+
+  #avellaneda__avances-text {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+}

@@ -1,10 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primaryBlue: #0d263b;
+  --secondaryBlue: #0061df;
+  --gray: #23292c;
+  --second: #175ebb;
 }
 
 code {
@@ -12,8 +17,123 @@ code {
     monospace;
 }
 
+span {
+  line-height: 93%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: transparent;
+}
+
+.main-btn {
+  background: var(--secondaryBlue);
+  padding: 15px 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.main-btn span {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: revert;
+  transition: color 0.3s ease;
+}
+
+.main-btn::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.main-btn:hover::after {
+  left: 0;
+  color: var(--secondaryBlue);
+}
+
+.main-btn:hover:hover > span {
+  color: var(--secondaryBlue);
+}
+
+.secondary-btn {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid #fff;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.secondary-btn::after {
+  content: "";
+  background: var(--secondaryBlue);
+  width: 150px;
+  height: 160px;
+  position: absolute;
+  border-radius: 100%;
+  bottom: -200px;
+  left: -200px;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.secondary-btn:hover {
+  color: #fff;
+}
+
+.secondary-btn:hover::after {
+  bottom: -115%;
+  left: -10%;
+  transform: scale(3);
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border: 1px solid #111;
+}
+
+@media screen and (max-width: 900px) {
+  .main-btn {
+    font-size: 0.9rem;
+  }
 }

@@ -1,0 +1,157 @@
+#avellaneda-intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#avellaneda-intro__bg {
+  height: 100%;
+  width: 100%;
+  background: #23292c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/*rgb(35, 41, 44)*/
+
+#avellaneda-intro__container {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+}
+
+#avellaneda-intro__text-container {
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#avellaneda-intro__second-title {
+  font-weight: bold;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+#avellaneda-intro__title {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  line-height: 93%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#avellaneda-intro__title span {
+  color: var(--secondaryBlue);
+}
+
+#avellaneda-intro__description {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #ddd;
+  font-family: "Inter", sans-serif;
+}
+
+#avellaneda-intro__img-container {
+  position: absolute;
+  height: 100vh;
+  width: 45%;
+  min-width: 350px;
+  bottom: 0;
+  right: 0;
+}
+
+#avellaneda-intro__img-container::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  top: 50%;
+  margin: auto;
+  height: 120vh;
+  width: 120vh;
+  background: var(--secondaryBlue);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+#avellaneda-intro__img {
+  position: absolute;
+  right: -10px;
+  width: 100%;
+  bottom: -200px;
+  transition: all 0.3s ease;
+}
+
+#avellaneda-intro__btn:hover #ourdevelpments__img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-height: 850px) {
+  #avellaneda-intro__img-container {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #avellaneda-intro__second-title {
+    font-size: 0.9rem;
+  }
+
+  #avellaneda-intro__title {
+    font-size: 2.4rem;
+  }
+
+  #avellaneda-intro__description {
+    font-size: 1.4rem;
+  }
+
+  #avellaneda-intro__img {
+    bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #avellaneda-intro__second-title {
+    font-size: 0.7rem;
+  }
+
+  #avellaneda-intro__title {
+    font-size: 2.2rem;
+  }
+
+  #avellaneda-intro__description {
+    font-size: 1.2rem;
+  }
+
+  #avellaneda-intro__img {
+    bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #avellaneda-intro {
+    align-items: flex-start;
+  }
+
+  #avellaneda-intro__container {
+    padding-top: 150px;
+  }
+}

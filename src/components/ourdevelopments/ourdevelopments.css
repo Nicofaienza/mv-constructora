@@ -1,24 +1,216 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-h1 {
-  text-align: center;
-  position: relative;
-  width: 80%;
-  margin: 50px auto;
-}
-
-h1::before {
-  content: "";
-  display: block;
+#our-developments {
   width: 100%;
-  height: 2px;
+  padding: 90px 0 120px;
+  background: var(--gray);
+}
+
+#our-developments__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+#our-developments__text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#our-developments__title {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: var(--secondaryBlue);
+  margin-bottom: 16px;
+}
+
+#our-developments__span span {
+  color: var(--secondaryBlue);
+}
+
+#our-developments__span {
+  font-size: 3.5rem;
+  width: 50%;
+  min-width: min-content;
+  font-weight: bold;
+  line-height: 4.5rem;
+  color: #fff;
+  padding-bottom: 32px;
+  line-height: 93%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#our-developments__text {
+  width: 60%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  line-height: 2rem;
+  margin-bottom: 40px;
+}
+
+#our-developments__cards-container {
+  width: 90%;
+  max-width: 1300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* OUR DEVELOPMENTS CARD */
+
+.our-developments__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  padding: 25px;
+}
+
+#our-developments__card-container {
+  width: 350px;
+}
+
+.our-developments__img-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-developments__img-container::after {
+  content: "";
   position: absolute;
-  background-color: black;
-  top: 50%;
-  z-index: -1;
+  bottom: -40%;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background: var(--secondaryBlue);
+  z-index: 0;
+}
+
+.our-developments__img {
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  z-index: 1;
+}
+
+#img-avellaneda {
+  bottom: -60px;
+}
+
+#img-florisbelo {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+#img-museum {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.our-developments__info-container {
+  width: 100%;
+  height: fit-content;
+  background: #111;
+  position: relative;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 25px;
+}
+
+.our-developments__card-name {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.our-developments__card-adress {
+  color: #ccc;
+}
+
+.our-developments__card-button {
+  align-self: flex-end;
+}
+
+#our-developments-cards__main #ourdevelopments__cards-container {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 960px) {
+  #our-developments__text-container {
+    align-items: center;
+  }
+
+  #our-developments__title {
+    font-size: 0.8rem;
+  }
+
+  #our-developments__span {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #our-developments__text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #our-developments__title {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+  }
+
+  #our-developments__span {
+    font-size: 2.5rem;
+    padding-bottom: 16px;
+  }
+  #our-developments__text {
+    font-size: 0.9rem;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+
+  #our-developments__cards-container {
+    gap: 16px;
+  }
+
+  #our-developments__card-container {
+    width: 260px;
+  }
+
+  .our-developments__img-container {
+    height: 300px;
+  }
+
+  .our-developments__img-container::after {
+    width: 260px;
+    height: 260px;
+  }
+
+  .our-developments__card-name {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .our-developments__card-adress {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+
+  .our-developments__card-button {
+    align-self: flex-end;
+    font-size: 0.8rem;
+  }
 }

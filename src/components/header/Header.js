@@ -1,52 +1,109 @@
 import "./header.css";
-import logo from "../../images/logoMV.png";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { ImMenu, ImCross } from "react-icons/im";
+import { useState } from "react";
 
 const Header = ({ Link }) => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleOpenMenu = () => {
+    setOpenMenu(true);
+  };
+
+  const handleCloseMenu = () => {
+    setOpenMenu(false);
+  };
+
   return (
     <header id="header">
-      <div id="fixedHeader">
-        <div className="containerHeader">
-          <a title="linkImgHeader" href="#">
-            <img className="imgHeader" src={logo} alt="linkImgHeader" />
-          </a>
-          <nav id="nav">
-            <ul className="list">
-              <li>
-                <Link className="listElement" to="/mv-constructora">
+      <div id="header__container">
+        <Link id="header__logo-link" to="/">
+          <span id="header_logo">
+            <span>MV</span>CONSTRUCTORA
+          </span>
+        </Link>
+
+        <div id="header__menu-responsive">
+          <div id="menu-responsive-icon-container">
+            {openMenu ? (
+              <ImCross onClick={handleCloseMenu} />
+            ) : (
+              <ImMenu onClick={handleOpenMenu} />
+            )}
+          </div>
+          <nav id="header__nav-responsive">
+            <ul
+              id="header__nav-responsive-list"
+              style={{ top: openMenu ? "0" : "-1000px" }}
+            >
+              <li className="header__nav-li">
+                <Link
+                  className="header__nav-link"
+                  to="/"
+                  onClick={handleCloseMenu}
+                >
                   Inicio
                 </Link>
               </li>
-              <li id="desarrollos">
+              <li className="header__nav-li" id="desarrollos">
                 <Link
                   id="link-desarrollos"
-                  className="listElement"
-                  to="/OurDevelopments"
+                  className="header__nav-link"
+                  to="/our-developments"
+                  onClick={handleCloseMenu}
                 >
-                  Desarrollos <MdKeyboardArrowDown />
+                  Desarrollos
                 </Link>
-                <ul id="desarrollos-menu">
-                  <li>
-                    <Link to="/">Florisbelo Acosta 1</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Florisbelo Acosta 2</Link>
-                  </li>
-                </ul>
               </li>
-              <li>
-                <Link className="listElement" to="/WhyUs">
+              <li className="header__nav-li">
+                <Link
+                  className="header__nav-link"
+                  to="/about-us"
+                  onClick={handleCloseMenu}
+                >
                   Nosotros
                 </Link>
               </li>
-              <li>
-                <Link className="listElement" to="/Contact">
+              <li className="header__nav-li">
+                <Link
+                  className="header__nav-link"
+                  to="/Contact"
+                  onClick={handleCloseMenu}
+                >
                   Contacto
                 </Link>
               </li>
             </ul>
           </nav>
         </div>
+
+        <nav id="header__nav">
+          <ul id="header__nav-list">
+            <li className="header__nav-li">
+              <Link className="header__nav-link" to="/">
+                Inicio
+              </Link>
+            </li>
+            <li className="header__nav-li" id="desarrollos">
+              <Link
+                id="link-desarrollos"
+                className="header__nav-link"
+                to="/our-developments"
+              >
+                Desarrollos
+              </Link>
+            </li>
+            <li className="header__nav-li">
+              <Link className="header__nav-link" to="/about-us">
+                Nosotros
+              </Link>
+            </li>
+            <li className="header__nav-li">
+              <Link className="header__nav-link" to="/Contact">
+                Contacto
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );

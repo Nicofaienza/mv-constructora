@@ -1,0 +1,99 @@
+#sponsors {
+  width: 100%;
+  padding: 80px 0 64px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+#sponsors__title {
+  letter-spacing: 5px;
+  font-size: 1rem;
+  color: #ccc;
+  font-family: "Inter", sans-serif;
+}
+
+#sopnsors__logos-container {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: grayscale(100%) brightness(0.5);
+  flex-wrap: wrap;
+}
+
+#sopnsors__logos-container span {
+  font-size: 30px;
+  color: #fff;
+}
+
+.sponsors__logo-img {
+  height: 100px;
+}
+
+#logo-imepho {
+  position: relative;
+  top: -8px;
+  height: 55px;
+  filter: brightness(20);
+}
+
+#logo-julio-anaya {
+  height: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  #sopnsors__logos-container {
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  #sponsors__title {
+    font-size: 0.9rem;
+  }
+
+  .sponsors__logo-img {
+    height: 70px;
+  }
+
+  #logo-julio-anaya {
+    height: 110px;
+  }
+
+  #logo-imepho {
+    top: -6px;
+    height: 50px;
+  }
+
+  #sopnsors__logos-container span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #sponsors__title {
+    font-size: 0.8rem;
+  }
+
+  .sponsors__logo-img {
+    height: 50px;
+  }
+
+  #logo-julio-anaya {
+    height: 90px;
+  }
+
+  #logo-imepho {
+    top: 0;
+    height: 30px;
+  }
+
+  #sopnsors__logos-container span {
+    font-size: 15px;
+  }
+}

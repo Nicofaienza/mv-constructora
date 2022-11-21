@@ -1,32 +1,22 @@
 import "./App.css";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import WhyUs from "./components/whyus/WhyUs";
-import OurDevelopments from "./components/ourdevelopments/OurDevelopments";
-import * as React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-const App = () => {
+import FlorisbeloIntro from "./components/FlorisbeloIntro/FlorisbeloIntro.js";
+import Banner1 from "./components/Banner1/Banner1";
+import AvellanedaIntro from "./components/AvellanedaIntro/AvellanedaIntro";
+import Banner2 from "./components/Banner2/Banner2";
+import * as React from "react";
+
+import Sponsors from "./components/sponsors/Sponsors";
+
+const App = ({ Link }) => {
   return (
-    <Router>
-      <Header Link={Link} />
-      <Routes>
-        <Route
-          path="/mv-constructora"
-          element={
-            <>
-              <Hero />
-              <WhyUs />
-              <OurDevelopments />
-            </>
-          }
-        />
-        <Route path="/WhyUs" element={<WhyUs />} />
-        <Route path="/OurDevelopments" element={<OurDevelopments />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <>
+      <AvellanedaIntro Link={Link} />
+      <Banner1 Link={Link} />
+      <FlorisbeloIntro Link={Link} />
+      <Banner2 />
+      <Sponsors />
+    </>
   );
 };
 
