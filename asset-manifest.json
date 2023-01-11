@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mv-constructora/static/css/main.ad5d259d.css",
-    "main.js": "/mv-constructora/static/js/main.de32ec04.js",
+    "main.js": "/mv-constructora/static/js/main.ac086c25.js",
     "static/media/florisbelo-flat-video.mp4": "/mv-constructora/static/media/florisbelo-flat-video.d93479d1a5d226ce89bb.mp4",
     "static/media/avellaneda-flat-recorte.mp4": "/mv-constructora/static/media/avellaneda-flat-recorte.22779edeafb00f85d923.mp4",
     "static/media/museum-flat-recorte.mp4": "/mv-constructora/static/media/museum-flat-recorte.03d26d854480a185bb72.mp4",
@@ -41,10 +41,10 @@
     "static/media/logo-julio-anaya.png": "/mv-constructora/static/media/logo-julio-anaya.6e6e3cb34eb5b1b48fe8.png",
     "index.html": "/mv-constructora/index.html",
     "main.ad5d259d.css.map": "/mv-constructora/static/css/main.ad5d259d.css.map",
-    "main.de32ec04.js.map": "/mv-constructora/static/js/main.de32ec04.js.map"
+    "main.ac086c25.js.map": "/mv-constructora/static/js/main.ac086c25.js.map"
   },
   "entrypoints": [
     "static/css/main.ad5d259d.css",
-    "static/js/main.de32ec04.js"
+    "static/js/main.ac086c25.js"
   ]
 }
