@@ -18,7 +18,7 @@ root.render(
   <Router>
     <Header Link={Link} />
     <Routes>
-      <Route path="/" element={<App Link={Link} />} />
+      <Route path="/mv-constructora" element={<App Link={Link} />} />
       <Route path="/about-us" element={<AboutUs Link={Link} />} />
       <Route path="/florisbelo-flat" element={<FlorisbeloFlat Link={Link} />} />
       <Route

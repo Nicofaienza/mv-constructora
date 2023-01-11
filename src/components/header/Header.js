@@ -16,7 +16,7 @@ const Header = ({ Link }) => {
   return (
     <header id="header">
       <div id="header__container">
-        <Link id="header__logo-link" to="/">
+        <Link id="header__logo-link" to="/mv-constructora">
           <span id="header_logo">
             <span>MV</span>CONSTRUCTORA
           </span>
@@ -38,7 +38,7 @@ const Header = ({ Link }) => {
               <li className="header__nav-li">
                 <Link
                   className="header__nav-link"
-                  to="/"
+                  to="/mv-constructora"
                   onClick={handleCloseMenu}
                 >
                   Inicio
@@ -79,7 +79,7 @@ const Header = ({ Link }) => {
         <nav id="header__nav">
           <ul id="header__nav-list">
             <li className="header__nav-li">
-              <Link className="header__nav-link" to="/">
+              <Link className="header__nav-link" to="/mv-constructora">
                 Inicio
               </Link>
             </li>
